@@ -470,3 +470,220 @@ ul.header_menu li ul li:hover a{
     color: #606060;
 }
 /*===>>> our company value section end <<<===*/
+
+/*===>>> services section start <<<===*/
+.services_tab_item {
+	border-bottom: 2px solid #ddd;
+	padding-bottom: 22px;
+	margin-bottom: 55px !important;
+}
+.services_tab_item li{
+    flex: 1 1 auto;
+}
+.services_tab_item li a.active{
+    position: relative;
+}
+.services_tab_item li a.active::after {
+	content: "";
+	height: 1px;
+	width: 100%;
+	position: absolute;
+	top: 118%;
+	left: 0;
+	background-color: #e73c3e;
+}
+.services_tab_item li a span i {
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	line-height: 70px;
+	text-align: center;
+	background-color: #fff;
+	font-size: 40px;
+	color: #777;
+    transition: all ease .5s;
+}
+.services_tab_item li a.active span i{
+    color: #e73c3e;
+}
+.services_tab_item li a strong {
+	color: #222;
+	font-size: 20px;
+	font-weight: 600;
+	margin-top: 10px;
+}
+.service_tab_content_text h3 {
+	font-size: 23px;
+	color: #222;
+	font-weight: 600;
+	margin-bottom: 12px;
+}
+.service_tab_content_text p {
+	color: #606060;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 25px;
+	margin-bottom: 15px;
+}
+.service_tab_content_text ul{
+    list-style: none;
+    padding-left: 0;
+}
+.service_tab_content_text ul li{
+    color: #606060;
+    margin-bottom: 6px;
+}
+.service_tab_content_text ul li::before {
+	content: "";
+	height: 10px;
+	width: 10px;
+	background-color: #e73c3e;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 0px 10px -1px 0;
+}
+/*===>>> service section end <<<===*/
+
+/*===>>> testimonial section start <<<===*/
+.testimonial_content p {
+	font-size: 22px;
+	color: #222;
+}
+.testimonial_details h5 {
+	color: #e73c3e;
+	margin-bottom: 0;
+	font-size: 18px;
+}
+.testimonial_details p {
+	font-size: 17px;
+	color: #606060;
+}
+.testimonial_image{
+    position: relative;
+}
+.testimonial_image span i {
+	position: absolute;
+	bottom: 50px;
+	left: 80px;
+	height: 85px;
+	width: 85px;
+	border-radius: 50%;
+	line-height: 85px;
+	text-align: center;
+	background-color: #fff;
+	font-size: 35px;
+    color: #e73c3e;
+    transition: all ease .5s;
+}
+.testimonial_image span i:hover{
+    background-color: #e73c3e;
+    color: #fff;
+}
+/*===>>> testimonial section end <<<===*/
+
+/*===>>> team section start <<<===*/
+.team_image{
+    position: relative;
+}
+.team_image img{
+    width: 100%;
+    height: auto;
+}
+.team_icon{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+.team_icon ul{
+    text-align: center;
+    padding-left: 0;
+    list-style: none;
+    transform: translateY(6px);
+}
+.team_icon ul li{
+    display: inline-block;
+    transform: translateY(36px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease-in-out .5s;
+}
+.team_image:hover .team_icon ul li{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.team_icon ul li:nth-child(1){
+    transition-delay: .2s;
+}
+.team_icon ul li:nth-child(2){
+    transition-delay: .3s;
+}
+.team_icon ul li:nth-child(3){
+    transition-delay: .4s;
+}
+.team_icon ul li:nth-child(4){
+    transition-delay: .5s;
+}
+.team_icon ul li a {
+	display: block;
+	font-size: 19px;
+	height: 35px;
+	width: 35px;
+	line-height: 35px;
+	border-radius: 50%;
+	background-color: #fff;
+	text-align: center;
+	color: #000;
+    transition: all ease-in-out .5s;
+}
+.team_icon ul li a:hover{
+    color: #fff;
+    background-color: #e73c3e;
+}
+.team_content h4 {
+	color: #e73c3e;
+	margin-top: 20px;
+	font-size: 22px;
+}
+.team_content p {
+	color: #606060;
+	font-size: 17px;
+}
+/*===>>> team section end <<<===*/
+
+/*===>>> blog section start <<<===*/
+.blog_thumbnail img{
+    max-width: 100%;
+}
+.blog_content p {
+	color: #e73c3e;
+	margin-top: 15px;
+	font-size: 17px;
+}
+.blog_content h3 a {
+	text-decoration: none;
+	color: #111;
+	font-size: 25px;
+	font-weight: 600;
+    transition: all ease-in-out .4s;
+}
+.blog_content h3 a:hover{
+    color: #e73c3e !important;
+}
+.blog_content a {
+	text-decoration: none;
+	color: #111;
+	font-size: 16px;
+	font-weight: 600;
+    transition: all ease-in-out .4s;
+}
+.blog_item:hover .blog_content a{
+    color: #e73c3e;
+    letter-spacing: 1.5px;
+}
+.blog_item:hover .blog_content h3 a{
+    letter-spacing: 0;
+    color: #111;
+}
+/*===>>> blog section end <<<===*/
